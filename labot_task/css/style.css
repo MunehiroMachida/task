@@ -1,0 +1,82 @@
+css
+
+
+
+
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", Helvetica, Arial, sans-serif;
+    width: 100vw;
+}
+
+.wrap{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav{
+    color: tomato;
+}
+
+
+.main-contents{
+    margin-bottom:100px;
+}
+.main-description{
+    display: flex;
+}
+
+
+
+
+.news-img{
+    display: flex;
+}
+
+
+/* お問い合わせフォームstart */
+.form p{
+    margin-bottom:10px;
+}
+.form input{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.form input::placeholder{
+    padding-left: 10px;
+}
+.form textarea{
+    width: 500px;
+    height: 400px;
+    border-radius: 5px;
+}
+.form textarea::placeholder{
+    padding-left: 10px;
+}
+
+.btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(73, 73, 73);
+    width: 90px;
+    border-radius: 10px;
+}
+/* お問い合わせフォームsend */
+
+
+.footer{
+    padding:30px 70px 30px;
+    background-color: rgb(114, 112, 114);
+    color: rgb(255, 255, 255);
+}
