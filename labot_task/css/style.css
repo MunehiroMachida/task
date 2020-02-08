@@ -1,82 +1,194 @@
-css
-
-
-
-
 body {
-    font-family: "ヒラギノ角ゴ Pro W3", Helvetica, Arial, sans-serif;
+    font-family: "ヒラギノ角ゴ Pro W3", Helvetica, Arial, Noto Sans;
     width: 100vw;
 }
-
-.wrap{
-    width: 90%;
+.wrap {
     text-align: center;
+    max-width: 1280px;
     margin: 0 auto;
+    background-color: #FCFCFC;
 }
-
-.nav{
+/* 部品＝＝＝＝＝＝＝＝＝＝ */
+.mb50 {
+    margin-bottom: 50px;
+}
+.mb60 {
+    margin-bottom: 60px;
+}
+/* 部品end＝＝＝＝＝＝＝＝＝＝ */
+/* header-start */
+.header-nav {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    padding: 11px 0 11px 88px;
+    color: #918F89;
+}
+.header-menu {
+    margin-left: 705px;
     display: flex;
     justify-content: space-between;
 }
+.news {
+    margin-left: 105px;
+}
+.qa {
+    margin-left: 110px;
+}
+/* header-end */
+/* コンテンツ部分stert */
+.fv {
+    background-image: url(../img/kadai-1.png);
+    width: 1280px;
+    height: 741px;
+    margin: 0 auto 142px;
+    position: relative;
+}
 
-.menu{
-    width: 25%;
+
+.fv-txt {
+    position: absolute;
+    top: 260px;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    width: 702px;
+    height: 136px;
+}
+.fv h1 {
+    text-align: left;
+    font: 60px/82px Noto Sans;
+    letter-spacing: 3px;
+    color: #918F89;
+    opacity: 1;
+    padding-top: 31px;
+    padding-left: 88px;
+}
+.main-contents {
+    margin-bottom: 100px;
+}
+.main-description {
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.description-img {
+    margin-left: 88px;
+}
+.description-img img {
+    width: 544px;
+    height: 500px;
+}
+.main-description-text {
+    text-align: left;
+    margin-left: 70px;
+    padding-top: 86px;
+    line-height: 2.3;
+    color: #3B3B3B;
+    opacity: 1;
+    font-size: 12px;
+}
+.sub-title {
+    font: 12px/30px Noto Sans;
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    color: rgb(73, 70, 70);
+}
+.style {
+    margin-bottom: 246px;
+}
+.style img {
+    width: 964px;
+    height: 503px;
+}
+.news-area {
+    width: 1102px;
+    margin: 0 auto 221px;
+}
+.news-txt-1 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: #3B3B3B;
+}
+.news-txt-2 {
+    font-size: 21px;
+    letter-spacing: 1.05px;
+    color: #3B3B3B;
+}
+.news-img {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 39px;
 }
-
-.header nav{
-    color: tomato;
+.news-img img {
+    width: 334px;
+    height: 387px;
 }
-
-
-.main-contents{
-    margin-bottom:100px;
-}
-.main-description{
-    display: flex;
-}
-
-
-
-
-.news-img{
-    display: flex;
-}
-
-
+/* コンテンツ部分end */
 /* お問い合わせフォームstart */
-.form p{
-    margin-bottom:10px;
+.form p {
+    margin-bottom: 10px;
 }
-.form input{
+.form input {
     width: 500px;
-    border-radius: 10px;
+    border: 0.5px solid #707070;
+    border-radius: 11px;
+    opacity: 0.6;
+    width: 463px;
+    height: 35px;
 }
-
-.form input::placeholder{
+.form input::placeholder {
     padding-left: 10px;
+    color: #3B3B3B;
+    opacity: 0.4;
 }
-.form textarea{
-    width: 500px;
-    height: 400px;
-    border-radius: 5px;
+.form textarea {
+    width: 463px;
+    height: 156px;
+    border: 0.5px solid #707070;
+    border-radius: 11px;
+    opacity: 0.6;
+    resize: none;
 }
-.form textarea::placeholder{
-    padding-left: 10px;
+.form textarea::placeholder {
+    padding: 8px 10px 8px;
+    color: #3B3B3B;
+    opacity: 0.4;
 }
-
-.btn{
+.btn {
     color: rgb(255, 255, 255);
     background-color: rgb(73, 73, 73);
-    width: 90px;
-    border-radius: 10px;
+    width: 111px;
+    height: 35px;
+    background: #707070 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 25px;
+    border: none;
 }
-/* お問い合わせフォームsend */
-
-
-.footer{
-    padding:30px 70px 30px;
-    background-color: rgb(114, 112, 114);
+/* お問い合わせフォームend */
+/* footer-start */
+.footer {
+    background-color:#918F89;
     color: rgb(255, 255, 255);
+    height: 284px;
 }
+.footer-nav{
+    width: 834px;
+    padding:116px 0 108px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font:22px/21px Noto Sans;
+}
+.footer-menu{
+    display: flex;
+}
+.footer-menu li{
+    padding:0 25px;
+    font-size: 18px;
+}
+.copy-right{
+    color:rgb(255, 255, 255);
+    font-size: 10px;
+}
+/* footer-end */

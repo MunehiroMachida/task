@@ -1,8 +1,3 @@
-課題のやつ
-
-
-
-
 <!DOCTYPE html>
 <html lang="jp">
 
@@ -18,50 +13,67 @@
 <body>
     <div class="wrap">
         <header class="header">
-            <nav class="nav">
+            <nav class="header-nav">
                 <h2>HTML<br>CSS</h2>
-                <ul class="menu">
-                    <li>About</li>
-                    <li>News</li>
-                    <li>Q&A</li>
+                <ul class="header-menu">
+                    <li class="about"><a href="index.html">About</a></li>
+                    <li class="news"><a href="news.html">News</a></li>
+                    <li class="qa"><a href="inquiry.html">Q&A</a></li>
+
+
+
+
+
+                    
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
                 </ul>
             </nav>
         </header>
-
-
-
-
-
         <section class="fv">
-            <h1><img src="./img/section_main_top_bg.png" alt=""></h1>
+            <div class="fv-txt">
+                <h1>We propose a life.</h1>
+            </div>
         </section>
         <main class="main-contents">
             <div class="main-description">
-                <p><img src="./img/btn_cv_01.gif" alt=""></p>
+                <p class="description-img"><img src="./img/kadai-2.png" alt=""></p>
                 <div class="main-description-text">
-                    <p>暮らしを提案する。</p>
-                    <p>私たちは家具を売るのではなく、お客様の〇〇する<br>
+                    <p class="sub-title">暮らしを提案する。</p>
+                    <p> 私たちは、家具を売るのではなく、お客様の理想とする<br>
                         「暮らし」を提案します。<br>
-                        仕事で疲れた後に帰りたくなる。<br>
-                        今日も１日頑張ろうと思える。<br>
+                        仕事で疲れた後に帰りたくなる、<br>
+                        今日も１日頑張ろうと思える、 <br>
                         そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
                 </div>
             </div>
             <div class="style">
-                <p>豊富なスタイル</p>
-                <p><img src="./img/btn_cv_02.png" alt=""></p>
+                <p class="sub-title mb50">豊富なスタイル</p>
+                <p><img src="./img/kadai-3.png" alt=""></p>
             </div>
-            <div class="news">
-                <p>NEWS</p>
+            <div class="news-area">
+                <p class="news-txt-1">NEWS</p>
                 <div class="news-img">
-                    <p><img src="./img/0.png" alt=""></p>
-                    <p><img src="./img/0.png" alt=""></p>
-                    <p><img src="./img/0.png" alt=""></p>
+                    <p><img src="./img/kadai-4.png" alt=""></p>
+                    <p><img src="./img/kadai-5.png" alt=""></p>
+                    <p><img src="./img/kadai-6.png" alt=""></p>
                 </div>
-                <p>view more</p>
+                <p class="news-txt-2">view more</p>
             </div>
             <div class="contact">
-                <p>CONTACT</p>
+                <p class="sub-title mb60">CONTACT</p>
                 <form action="#" method="post" class="form">
                     <p><input type="text" name="your-name" placeholder="お名前"></p>
                     <p><input type="text" name="email" placeholder="メールアドレス"></p>
@@ -72,20 +84,16 @@
                 </form>
             </div>
         </main>
-
-
-
-
         <footer class="footer">
-            <nav class="nav">
+            <nav class="footer-nav">
                 <p>HTML<br>CSS</p>
-                <ul class="menu">
+                <ul class="footer-menu">
                     <li>About</li>
                     <li>News</li>
                     <li>Q&A</li>
                 </ul>
             </nav>
-            <p>&copy;HTMLCSS.code</p>
+            <p class="copy-right">&copy;HTMLCSS.code</p>
         </footer>
     </div>
 </body>

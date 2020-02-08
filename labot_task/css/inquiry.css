@@ -1,0 +1,99 @@
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", Helvetica, Arial, Noto Sans;
+    width: 100vw;
+}
+.wrap {
+    text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #FCFCFC;
+}
+/* header-start */
+.header-nav {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    padding: 11px 0 11px 88px;
+    color: #918F89;
+}
+.header-menu {
+    margin-left: 705px;
+    display: flex;
+    justify-content: space-between;
+}
+.news {
+    margin-left: 105px;
+}
+.qa {
+    margin-left: 110px;
+}
+/* header-end */
+/* コンテンツ部分stert */
+.fv {
+    background-image: url(../img/inquiry-fv-2.png);
+    width: 1280px;
+    height: 415px;
+    margin: 0 auto 142px;
+    position: relative;
+}
+.fv h1 {
+    position: absolute;
+    top: 179px;
+left: 228px;
+font:30px/53px Noto Sans;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    padding-top: 31px;
+    padding-left: 88px;
+    text-shadow: 11px 9px 2px rgb(144, 146, 160);
+}
+
+.news-area {
+    width: 1102px;
+    margin: 0 auto 221px;
+}
+.news-txt-1 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: #3B3B3B;
+}
+
+.news-img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 39px;
+}
+.news-img img {
+    width: 334px;
+    height: 387px;
+}
+/* コンテンツ部分end */
+
+/* footer-start */
+.footer {
+    background-color:#918F89;
+    color: rgb(255, 255, 255);
+    height: 284px;
+}
+.footer-nav{
+    width: 834px;
+    padding:116px 0 108px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font:22px/21px Noto Sans;
+}
+.footer-menu{
+    display: flex;
+}
+.footer-menu li{
+    padding:0 25px;
+    font-size: 18px;
+}
+.copy-right{
+    color:rgb(255, 255, 255);
+    font-size: 10px;
+}
+/* footer-end */
