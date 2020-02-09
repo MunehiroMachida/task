@@ -1,140 +1,162 @@
 <!DOCTYPE html>
 <html lang="jp">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>課題</title>
-<link rel="stylesheet" type="text/css" href="./css/reset.css" />
-<link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>課題</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.navToggle').click(function () {
+                $(this).toggleClass('active');
+                if ($(this).hasClass('active')) {
+                    $('.globalMenuSp').addClass('active');
+                } else {
+                    $('.globalMenuSp').removeClass('active');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
-<div class="wrap">
-<header class="header pc">
-<nav class="header-nav">
-<h2>HTML<br>CSS</h2>
-<ul class="header-menu">
-<li class="about"><a href="index.html">About</a></li>
-<li class="news"><a href="news.html">News</a></li>
-<li class="qa"><a href="inquiry.html">Q&A</a></li>
-</ul>
-</nav>
-</header>
-<!-- SP -->
-<header class="header-sp sp">
-<h2>HTML<br>CSS</h2>
-<nav class="header-nav">
-<ul class="header-menu">
-<li class="about"><a href="index.html">About</a></li>
-<li class="news"><a href="news.html">News</a></li>
-<li class="qa"><a href="inquiry.html">Q&A</a></li>
-</ul>
-</nav>
-</header>
-<!-- SP-end -->
-<section class="fv pc">
-<p class="fv-img"><img src="./img/kadai-1.png" alt=""></p>
-<div class="fv-txt">
-<h1>We propose a life.</h1>
-</div>
-</section>
-<!-- SP -->
-<section class="fv sp">
-<p class="fv-img"><img src="./img/sp-task5.png" alt=""></p>
-<h1 class="fv-txt">
-<p class="fv-txt-itam-1">We</p>
-<p class="fv-txt-itam-2">propose</p>
-<p class="fv-txt-itam-3">a life.</p>
-</h1>
-</section>
-<!-- SP-end -->
-<main class="main-contents pc">
-<div class="main-description">
-<p class="description-img"><img src="./img/kadai-2.png" alt=""></p>
-<div class="main-description-text">
-<p class="sub-title">暮らしを提案する。</p>
-<p> 私たちは、家具を売るのではなく、お客様の理想とする<br>
-「暮らし」を提案します。<br>
-仕事で疲れた後に帰りたくなる、<br>
-今日も１日頑張ろうと思える、 <br>
-そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
-</div>
-</div>
-<div class="style">
-<p class="sub-title mb7">豊富なスタイル</p>
-<p class="pc"><img src="./img/kadai-3.png" alt=""></p>
-</div>
-<div class="news-area">
-<p class="news-txt-1">NEWS</p>
-<div class="news-img">
-<p class="pc"><img src="./img/kadai-4.png" alt=""></p>
-<p class="pc"><img src="./img/kadai-5.png" alt=""></p>
-<p class="pc"><img src="./img/kadai-6.png" alt=""></p>
-</div>
-<p class="news-txt-2">view more</p>
-</div>
-<div class="contact">
-<p class="sub-title mb8">CONTACT</p>
-<form action="#" method="post" class="form">
-<p><input type="text" name="your-name" placeholder="お名前"></p>
-<p><input type="text" name="email" placeholder="メールアドレス"></p>
-<p>
-<textarea id="contact" name="contact" placeholder="お問い合わせ内容"></textarea>
-</p>
-<button class="btn" type="submit">SEND</button>
-</form>
-</div>
-</main>
-<!-- SP -->
-<main class="main-contents sp">
-<div class="main-description">
-<div class="main-description-text">
-<p class="sub-title">暮らしを提案する。</p>
-<p> 私たちは、家具を売るのではなく、お客様の理想とする<br>
-「暮らし」を提案します。<br>
-仕事で疲れた後に帰りたくなる、<br>
-今日も１日頑張ろうと思える、 <br>
-そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
-</div>
-<p class="description-img"><img src="./img/sp-task4.png" alt=""></p>
-</div>
-<div class="style">
-<p class="sub-title mb7">豊富なスタイル</p>
-<p class="sp"><img src="./img/sp-task6.png" alt=""></p>
-</div>
-<div class="news-area">
-<p class="news-txt-1">NEWS</p>
-<div class="news-img">
-<p class="sp"><img src="./img/sp-task3.png" alt=""></p>
-<p class="sp"><img src="./img/sp-task2.png" alt=""></p>
-<p class="sp"><img src="./img/sp-task1.png" alt=""></p>
-</div>
-<p class="news-txt-2">view more</p>
-</div>
-<div class="contact">
-<p class="sub-title mb8">CONTACT</p>
-<form action="#" method="post" class="form">
-<p><input type="text" name="your-name" placeholder="お名前"></p>
-<p><input type="text" name="email" placeholder="メールアドレス"></p>
-<p>
-<textarea id="contact" name="contact" placeholder="お問い合わせ内容"></textarea>
-</p>
-<button class="btn" type="submit">SEND</button>
-</form>
-</div>
-</main>
-<!-- SP-end -->
-<footer class="footer">
-<nav class="footer-nav">
-<p>HTML<br>CSS</p>
-<ul class="footer-menu">
-<li>About</li>
-<li>News</li>
-<li>Q&A</li>
-</ul>
-</nav>
-<p class="copy-right">&copy;HTMLCSS.code</p>
-</footer>
-</div>
+    <div class="wrap">
+        <header class="header pc">
+            <nav class="header-nav">
+                <h2>HTML<br>CSS</h2>
+                <ul class="header-menu">
+                    <li class="about"><a href="index.html">About</a></li>
+                    <li class="news"><a href="news.html">News</a></li>
+                    <li class="qa"><a href="inquiry.html">Q&A</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- SP -->
+        <header class="header-sp sp">
+            <h2>HTML<br>CSS</h2>
+            <div class="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="globalMenuSp">
+                <ul>
+                    <li class="about"><a href="index.html">About</a></li>
+                    <li class="news"><a href="news.html">News</a></li>
+                    <li class="qa"><a href="inquiry.html">Q&A</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- SP-end -->
+        <section class="fv pc">
+            <p class="fv-img"><img src="./img/kadai-1.png" alt=""></p>
+            <div class="fv-txt">
+                <h1>We propose a life.</h1>
+            </div>
+        </section>
+        <!-- SP -->
+        <section class="fv sp">
+            <p class="fv-img"><img src="./img/sp-task5.png" alt=""></p>
+            <h1 class="fv-txt-sp">
+                <p class="fv-txt-itam-1">We</p>
+                <p class="fv-txt-itam-2">propose</p>
+                <p class="fv-txt-itam-3">a life.</p>
+            </h1>
+        </section>
+        <!-- SP-end -->
+        <main class="main-contents pc">
+            <div class="main-description">
+                <p class="description-img"><img src="./img/kadai-2.png" alt=""></p>
+                <div class="main-description-text">
+                    <p class="sub-title">暮らしを提案する。</p>
+                    <p> 私たちは、家具を売るのではなく、お客様の理想とする<br>
+                        「暮らし」を提案します。<br>
+                        仕事で疲れた後に帰りたくなる、<br>
+                        今日も１日頑張ろうと思える、 <br>
+                        そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
+                </div>
+            </div>
+            <div class="style">
+                <p class="sub-title mb7">豊富なスタイル</p>
+                <p class="pc"><img src="./img/kadai-3.png" alt=""></p>
+            </div>
+            <div class="news-area">
+                <p class="news-txt-1">NEWS</p>
+                <div class="news-img">
+                    <p class="pc"><img src="./img/kadai-4.png" alt=""></p>
+                    <p class="pc"><img src="./img/kadai-5.png" alt=""></p>
+                    <p class="pc"><img src="./img/kadai-6.png" alt=""></p>
+                </div>
+                <p class="news-txt-2">view more</p>
+            </div>
+            <div class="contact">
+                <p class="sub-title mb8">CONTACT</p>
+                <form action="#" method="post" class="form">
+                    <p><input type="text" name="your-name" placeholder="お名前"></p>
+                    <p><input type="text" name="email" placeholder="メールアドレス"></p>
+                    <p>
+                        <textarea id="contact" name="contact" placeholder="お問い合わせ内容"></textarea>
+                    </p>
+                    <button class="btn" type="submit">SEND</button>
+                </form>
+            </div>
+        </main>
+        <!-- SP -->
+        <main class="main-contents sp">
+            <div class="main-description">
+                <div class="main-description-text">
+                    <p class="sub-title">暮らしを提案する。</p>
+                    <p> 私たちは、家具を売るのではなく、<br>お客様の理想とする<br>
+                        「暮らし」を提案します。<br>
+                        仕事で疲れた後に帰りたくなる、<br>
+                        今日も１日頑張ろうと思える、 <br>
+                        そんな空間をお客様と一緒に作り上げていくのが<br>私たちの仕事です。</p>
+                </div>
+                <p class="description-img"><img src="./img/sp-task4.png" alt=""></p>
+            </div>
+            <div class="style mb10">
+                <p class="sub-title mb10">豊富なスタイル</p>
+                <p class="sp style-sp"><img src="./img/sp-task6.png" alt=""></p>
+            </div>
+            <div class="news-area">
+                <p class="news-txt-1">NEWS</p>
+                <div class="news-img">
+                    <p class="sp"><img src="./img/sp-task3.png" alt=""></p>
+                    <p class="sp"><img src="./img/sp-task2.png" alt=""></p>
+                    <p class="sp"><img src="./img/sp-task1.png" alt=""></p>
+                </div>
+                <p class="news-txt-2">view more</p>
+            </div>
+            <div class="contact">
+                <p class="sub-title mb10">CONTACT</p>
+                <form action="#" method="post" class="form">
+                    <p><input type="text" name="your-name" placeholder="お名前"></p>
+                    <p><input type="text" name="email" placeholder="メールアドレス"></p>
+                    <p>
+                        <textarea id="contact" name="contact" placeholder="お問い合わせ内容"></textarea>
+                    </p>
+                    <button class="btn" type="submit">SEND</button>
+                </form>
+            </div>
+        </main>
+        <!-- SP-end -->
+        <footer class="footer">
+            <nav class="footer-nav">
+                <p>HTML<br>CSS</p>
+                <ul class="footer-menu">
+                    <li>About</li>
+                    <li>News</li>
+                    <li>Q&A</li>
+                </ul>
+            </nav>
+            <p class="copy-right">&copy;HTMLCSS.code</p>
+            <script type="text/javascript">
+                now = new Date();
+                nowyear = now.getFullYear();
+                document.write("Copyright &copy; 2011-" + nowyear);
+            </script>
+        </footer>
+    </div>
 </body>
 </html>

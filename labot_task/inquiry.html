@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="jp">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>課題</title>
+    <title>??</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./css/inquiry.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.navToggle').click(function () {
+                $(this).toggleClass('active');
+                if ($(this).hasClass('active')) {
+                    $('.globalMenuSp').addClass('active');
+                } else {
+                    $('.globalMenuSp').removeClass('active');
+                }
+            });
+        });
+    </script>
 </head>
-
 <body>
     <div class="wrap">
-        <header class="header">
+        <header class="header pc">
             <nav class="header-nav">
                 <h2>HTML<br>CSS</h2>
                 <ul class="header-menu">
                     <li class="about"><a href="index.html">About</a></li>
                     <li class="news"><a href="news.html">News</a></li>
                     <li class="qa"><a href="inquiry.html">Q&A</a></li>
-
-</ul>
+                </ul>
             </nav>
         </header>
+        <!-- SP -->
+        <header class="header-sp sp">
+            <h2>HTML<br>CSS</h2>
+            <div class="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="globalMenuSp">
+                <ul>
+                    <li class="about"><a href="index.html">About</a></li>
+                    <li class="news"><a href="news.html">News</a></li>
+                    <li class="qa"><a href="inquiry.html">Q&A</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- SP-end -->
         <section class="fv">
             <div class="fv-txt">
                 <h1>Q&A</h1>
             </div>
         </section>
-  
         <footer class="footer">
             <nav class="footer-nav">
                 <p>HTML<br>CSS</p>
@@ -39,8 +63,12 @@
                 </ul>
             </nav>
             <p class="copy-right">&copy;HTMLCSS.code</p>
+            <script type="text/javascript">
+                now = new Date();
+                nowyear = now.getFullYear();
+                document.write("Copyright &copy; 2011-" + nowyear);
+            </script>
         </footer>
     </div>
 </body>
-
 </html>

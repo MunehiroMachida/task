@@ -1,99 +1,456 @@
 body {
-    font-family: "ヒラギノ角ゴ Pro W3", Helvetica, Arial, Noto Sans;
+    font-family: Noto Sans;
     width: 100vw;
 }
 .wrap {
     text-align: center;
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     background-color: #FCFCFC;
 }
+.sp {
+    display: none;
+}
+/* 部品＝＝＝＝＝＝＝＝＝＝ */
+.mb7 {
+    margin-bottom: 7%;
+}
+.mb8 {
+    margin-bottom: 8%;
+}
+/* 部品end＝＝＝＝＝＝＝＝＝＝ */
 /* header-start */
+.header {
+    width: 100%;
+    
+}
 .header-nav {
     display: flex;
     align-items: flex-end;
     margin: 0 auto;
-    padding: 11px 0 11px 88px;
+    padding: 1% 0 1% 8%;
     color: #918F89;
 }
 .header-menu {
-    margin-left: 705px;
+    margin-left: 60%;
     display: flex;
     justify-content: space-between;
 }
 .news {
-    margin-left: 105px;
+    margin-left: 70%;
 }
 .qa {
-    margin-left: 110px;
+    margin-left: 70%;
 }
 /* header-end */
 /* コンテンツ部分stert */
 .fv {
-    background-image: url(../img/inquiry-fv-2.png);
-    width: 1280px;
-    height: 415px;
-    margin: 0 auto 142px;
+    margin: 0 auto 10%;
     position: relative;
 }
-.fv h1 {
-    position: absolute;
-    top: 179px;
-left: 228px;
-font:30px/53px Noto Sans;
-    letter-spacing: 3px;
-    color: rgb(255, 255, 255);
-    opacity: 1;
-    padding-top: 31px;
-    padding-left: 88px;
-    text-shadow: 11px 9px 2px rgb(144, 146, 160);
+.fv-img img {
+    width: 100%;
 }
-
+.fv-txt {
+    position: absolute;
+    top: 36%;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    width: 53%;
+    height: 17%;
+}
+.fv h1 {
+    font-size: 3.5vw;
+    text-align: left;
+    letter-spacing: 3px;
+    color: #918F89;
+    opacity: 1;
+    padding-top: 6%;
+    padding-left: 13%;
+}
+.main-contents {
+    margin-bottom: 100px;
+}
+.main-description {
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.description-img {
+    margin-left: 88px;
+}
+.description-img img {
+    width: 100%;
+    max-width: 544px;
+}
+.main-description-text {
+    text-align: left;
+    margin-left: 9%;
+    padding-top: 8%;
+    line-height: 2.3;
+    color: #3B3B3B;
+    opacity: 1;
+    font-size: 80%;
+}
+.sub-title {
+    font-size: 2.3vw;
+    letter-spacing: 2.5px;
+    color: rgb(73, 70, 70);
+}
+.style {
+    margin-bottom: 20%;
+}
+.style img {
+    width: 100%;
+    max-width: 964px;
+}
 .news-area {
     width: 1102px;
     margin: 0 auto 221px;
 }
 .news-txt-1 {
-    font-size: 25px;
+    font-size: 2.3vw;
     margin-bottom: 50px;
     color: #3B3B3B;
 }
-
+.news-txt-2 {
+    font-size: 2vw;
+    letter-spacing: 1.05px;
+    color: #3B3B3B;
+}
 .news-img {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 39px;
 }
 .news-img img {
-    width: 334px;
-    height: 387px;
+    width: 22vw;
 }
 /* コンテンツ部分end */
-
+/* お問い合わせフォームstart */
+.form p {
+    margin-bottom: 10px;
+}
+.form input {
+    border: 0.5px solid #707070;
+    border-radius: 11px;
+    opacity: 0.6;
+    width: 40%;
+    height: 35px;
+}
+.form input::placeholder {
+    padding-left: 10px;
+    color: #3B3B3B;
+    opacity: 0.4;
+}
+.form textarea {
+    width: 40%;
+    height: 156px;
+    border: 0.5px solid #707070;
+    border-radius: 11px;
+    opacity: 0.6;
+    resize: none;
+}
+.form textarea::placeholder {
+    padding: 8px 10px 8px;
+    color: #3B3B3B;
+    opacity: 0.4;
+}
+.btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(73, 73, 73);
+    width: 111px;
+    height: 35px;
+    background: #707070 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 25px;
+    border: none;
+}
+/* お問い合わせフォームend */
 /* footer-start */
 .footer {
-    background-color:#918F89;
+    background-color: #918F89;
     color: rgb(255, 255, 255);
     height: 284px;
 }
-.footer-nav{
+.footer-nav {
     width: 834px;
-    padding:116px 0 108px;
-    margin:auto;
+    padding: 116px 0 108px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    font:22px/21px Noto Sans;
 }
-.footer-menu{
+.footer-menu {
     display: flex;
 }
-.footer-menu li{
-    padding:0 25px;
+.footer-menu li {
+    padding: 0 25px;
     font-size: 18px;
 }
-.copy-right{
-    color:rgb(255, 255, 255);
+.copy-right {
+    color: rgb(255, 255, 255);
     font-size: 10px;
 }
 /* footer-end */
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        text-align: center;
+    }
+    .wrap {
+        max-width: 480px;
+        background-color: #FCFCFC;
+    }
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+    .mb10 {
+        margin-bottom: 10%;
+    }
+    .header-sp{
+        margin: 0;
+    }
+    .header-sp h2 {
+        width: 100%;
+        background-color: #918F89;
+        color: #FCFCFC;
+        border-bottom: 1px dotted rgb(187, 187, 187);
+        margin:0 auto;
+        padding:7px 0;
+        position: relative;
+        z-index: 100;
+    }
+    nav.globalMenuSp {
+        position: absolute;
+        z-index: 2;
+        opacity: 0.5;
+        background: #fff;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        transform: translateY(-100%);
+        transition: all 0.6s;
+        width: 100%;
+    }
+    nav.globalMenuSp ul {
+        background: #918F89;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+    nav.globalMenuSp ul li {
+        font-size: 1.1em;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px dotted rgb(187, 187, 187);
+    }
+    /* 最後はラインを描かない */
+    nav.globalMenuSp ul li:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    nav.globalMenuSp ul li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        padding: 1em 0;
+    }
+    /* このクラスを、jQueryで付与・削除する */
+    nav.globalMenuSp.active {
+        transform: translateY(0%);
+    }
+    .navToggle {
+        display: block;
+        position: fixed;    /* bodyに対しての絶対位置指定 */
+        right: 13px;
+        top: 5px;
+        width: 42px;
+        height: 51px;
+        cursor: pointer;
+        z-index: 101;
+    }
+    
+    .navToggle span {
+        display: block;
+        position: absolute;
+        /* .navToggleに対して */
+        width: 30px;
+        border-bottom: solid 3px #eee;
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+        left: 6px;
+    }
+    .navToggle span:nth-child(1) {
+        top: 9px;
+    }
+    .navToggle span:nth-child(2) {
+        top: 18px;
+    }
+    .navToggle span:nth-child(3) {
+        top: 27px;
+    }
+    .navToggle span:nth-child(4) {
+        border: none;
+        color: #eee;
+        font-size: 9px;
+        font-weight: bold;
+        top: 34px;
+    }
+    /* 最初のspanをマイナス45度に */
+    .navToggle.active span:nth-child(1) {
+        top: 18px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    /* 2番目と3番目のspanを45度に */
+    .navToggle.active span:nth-child(2),
+    .navToggle.active span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .news {
+        margin-left: 0;
+    }
+    
+    .qa {
+        margin-left: 0;
+    }
+    .fv {
+        position: relative;
+    }
+    .fv h1 {
+        text-align: left;
+        padding: 0;
+    }
+    .fv-txt-sp {
+        position: absolute;
+        top: 30%;
+    }
+    .fv-txt-sp p {
+        background-color: #FFFFFF;
+        opacity: 0.8;
+        font-size: 11vw;
+        margin-bottom: 10%;
+        padding: 5% 0% 5% 18%;
+        color: #918F89;
+    }
+    .fv-txt-itam-1 {
+        width: 19vw;
+    }
+    .fv-txt-itam-2 {
+        width: 49vw;
+    }
+    .fv-txt-itam-3 {
+        width: 35vw;
+    }
+    .main-description {
+        display: block;
+        margin-bottom: 5%;
+    }
+    .main-description-text {
+        text-align: center;
+        margin-bottom: 10%;
+        padding-top: 8%;
+        line-height: 2.3;
+        color: #3B3B3B;
+        opacity: 1;
+        font-size: 80%;
+    }
+    .description-img {
+        margin: 0 auto 15%;
+        width: 90%;
+    }
+    .sub-title {
+        font-size: 6vw;
+        color: rgb(51, 47, 47);
+    }
+    .style-sp img {
+        width: 100vw;
+    }
+    .news-area {
+        width: 100%;
+        margin: 0 auto 221px;
+    }
+    .news-txt-1 {
+        font-size: 6vw;
+        margin-bottom: 50px;
+        color: #3B3B3B;
+    }
+    .news-txt-2 {
+        font-size: 5vw;
+        letter-spacing: 1.05px;
+        color: rgb(88, 86, 86);
+    }
+    .news-img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    .news-img p {
+        margin-bottom: 5%;
+    }
+    .news-img img {
+        max-width: 380px;
+        width: 100%;
+    }
+    /* お問い合わせフォームstart */
+    .form p {
+        margin-bottom: 25px;
+    }
+    .form input {
+        border: 0.5px solid #707070;
+        border-radius: 11px;
+        opacity: 0.6;
+        width: 80%;
+        height: 27px;
+    }
+    .form input::placeholder {
+        padding-left: 10px;
+        color: #3B3B3B;
+        opacity: 0.4;
+    }
+    .form textarea {
+        width: 80%;
+        height: 100px;
+        border: 0.5px solid #707070;
+        border-radius: 11px;
+        opacity: 0.6;
+        resize: none;
+    }
+    .form textarea::placeholder {
+        padding: 8px 10px 8px;
+        color: #3B3B3B;
+        opacity: 0.4;
+    }
+    .btn {
+        color: rgb(255, 255, 255);
+        width: 174px;
+        height: 49px;
+        background: #D1D1D1;
+        opacity: 1;
+        border-radius: 25px;
+        border: none;
+    }
+    /* お問い合わせフォームend */
+    .footer-nav {
+        width: 100%;
+        padding: 116px 0 108px;
+        margin: auto;
+        display: block;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .footer-menu {
+        display: none;
+    }
+}
