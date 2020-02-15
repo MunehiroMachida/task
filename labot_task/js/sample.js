@@ -9,6 +9,7 @@ $(function () {
             $('.header-menu').removeClass('active');
         }
     });
+    // hover
     $('.news-img-item').hover(
         function () {
             $(this).find('.hover-slide').slideDown();
@@ -19,46 +20,39 @@ $(function () {
 });
 
 
-// index.htmlのhover
+
+// faq-listフェードイン
 $(function () {
-    $('#login-show').click(function () {
-        $('#login-modal').fadeIn();
-    });
-    $('.signup-show').click(function () {
-        $('#signup-modal').fadeIn();
-    });
-    $('.close-modal').click(function () {
-        $('#login-modal').fadeOut();
-        $('#signup-modal').fadeOut();
-    });
-    $('.lesson-hover').hover(
+    $('.faq-list-item-box').click(
         function () {
-            $(this).find('.text-contents').addClass('text-active');
-        },
-        function () {
-            $(this).find('.text-contents').removeClass('text-active');
-        }
-    );
+            $(this).toggleClass('open');
+            $(this).next('.answer').slideToggle();
+        });
+});
 
 
-// inquiry.htmlのアコーディオン
-    $('.faq-list-item').click(function () {
-        var $answer = $(this).find('.answer');
-        if ($answer.hasClass('open')) {
-            $answer.removeClass('open');
-            $answer.fadeIn();
-            $(this).find('span').text('+');
+// faq-list　img 回転
+$(function () {
+    $('.faq-list-item-box img').click(function () {
+        $(this).toggleClass('action');
+        if ($(this).hasClass('action')) {
+            $(this).find('.faq-list-item-box img').addClass('action');
         } else {
-            $answer.addClass('open');
-            $answer.fadeOut();
-            $(this).find('span').text('-');
+            $(this).find('.faq-list-item-box img').removeClass('action');
         }
     });
+
 });
 
-// フェードインクリック、かいてん
-$(function(){
-    $('.faq-list-item-box').click(function(){
-        $(this).toggleClass("faq-list-item-box img");
-    });
-});
+
+
+
+
+
+var trigger = document.getElementsByClassName('.faq-list-item-box img');
+if(trigger){
+  trigger.addEventListener('click', function(){
+    var target = document.getElementById('js-target');
+    target.classList.toggle('show');
+  }, false);
+}
