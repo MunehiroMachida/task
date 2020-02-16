@@ -18,41 +18,21 @@ $(function () {
             $(this).find('.hover-slide').slideUp();
         });
 });
-
-
-
 // faq-listフェードイン
 $(function () {
-    $('.faq-list-item-box').click(
-        function () {
+    $('.faq-list-item-box').click(function () {
             $(this).toggleClass('open');
             $(this).next('.answer').slideToggle();
         });
 });
-
-
 // faq-list　img 回転
 $(function () {
-    $('.faq-list-item-box img').click(function () {
-        $(this).toggleClass('action');
+    $('.faq-list-item-box').click(function () {
+        $(this).children('p').toggleClass('action');
         if ($(this).hasClass('action')) {
-            $(this).find('.faq-list-item-box img').addClass('action');
+            $(this).find('.faq-list-item-box p').addClass('action');
         } else {
-            $(this).find('.faq-list-item-box img').removeClass('action');
+            $(this).find('.faq-list-item-box p').removeClass('action');
         }
     });
-
 });
-
-
-
-
-
-
-var trigger = document.getElementsByClassName('.faq-list-item-box img');
-if(trigger){
-  trigger.addEventListener('click', function(){
-    var target = document.getElementById('js-target');
-    target.classList.toggle('show');
-  }, false);
-}

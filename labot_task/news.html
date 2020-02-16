@@ -1,118 +1,117 @@
 <!DOCTYPE html>
 <html lang="jp">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>課題</title>
-    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./css/news.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/sample.js"></script>
-    <script>
-        $(function () {
-            $('.navToggle').click(function () {
-                $(this).toggleClass('active');
-                if ($(this).hasClass('active')) {
-                    $('.globalMenuSp').addClass('active');
-                } else {
-                    $('.globalMenuSp').removeClass('active');
-                }
-            });
-        });
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>課題</title>
+<link rel="stylesheet" type="text/css" href="./css/reset.css" />
+<link rel="stylesheet" type="text/css" href="./css/news.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">   </script>
+<script src="./js/sample.js"></script>
 </head>
 <body>
-    <div class="wrap">
-        <header class="header pc">
-            <nav class="header-nav">
-                <h2>HTML<br>CSS</h2>
-                <ul class="header-menu">
-                    <li class="about"><a href="index.html">About</a></li>
-                    <li class="news"><a href="news.html">News</a></li>
-                    <li class="qa"><a href="inquiry.html">Q&A</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- SP -->
-        <header class="header-sp sp">
-            <h2>HTML<br>CSS</h2>
-            <div class="navToggle">
-                <span></span><span></span><span></span>
-            </div>
-            <nav class="globalMenuSp">
-                <ul>
-                    <li class="about"><a href="index.html">About</a></li>
-                    <li class="news"><a href="news.html">News</a></li>
-                    <li class="qa"><a href="inquiry.html">Q&A</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- SP-end -->
-        <section class="fv pc">
-            <p class="fv-img"><img src="./img/news-fv-2.png" alt=""></p>
-            <div class="fv-txt">
-                <h1>NEWS</h1>
-            </div>
-        </section>
-        <!-- SP -->
-        <section class="fv sp">
-            <p class="fv-img"><img src="./img/sp-news-fv.png" alt=""></p>
-            <h1 class="fv-txt-sp">
-                NEWS
-            </h1>
-        </section>
-        <!-- SP-end -->
-        <main class="main-contents pc">
-            <div class="news-area">
-                <p class="news-txt-1">最新情報</p>
-                <div class="news-img">
-                    <p class="pc news-hoover"><img src="./img/kadai-4.png" alt=""><br><span class="img-hover">アームストろん</span></p>
-                    <p class="pc"><img src="./img/kadai-5.png" alt=""></p>
-                    <p class="pc"><img src="./img/kadai-6.png" alt=""></p>
-                </div>
-            </div>
-        </main>
-        <!-- SP -->
-        <main class="main-contents sp">
-            <div class="news-area">
-                <p class="news-txt-1">NEWS</p>
-                <div class="news-img">
-                    <p class="sp"><img src="./img/sp-task3.png" alt=""></p>
-                    <p class="sp"><img src="./img/sp-task2.png" alt=""></p>
-                    <p class="sp"><img src="./img/sp-task1.png" alt=""></p>
-                </div>
-                <p class="news-txt-2">view more</p>
-            </div>
-            <div class="contact">
-                <p class="sub-title mb10">CONTACT</p>
-                <form action="#" method="post" class="form">
-                    <p><input type="text" name="your-name" placeholder="お名前"></p>
-                    <p><input type="text" name="email" placeholder="メールアドレス"></p>
-                    <p>
-                        <textarea id="contact" name="contact" placeholder="お問い合わせ内容"></textarea>
-                    </p>
-                    <button class="btn" type="submit">SEND</button>
-                </form>
-            </div>
-        </main>
-        <!-- SP-end -->
-        <footer class="footer">
-            <nav class="footer-nav">
-                <p>HTML<br>CSS</p>
-                <ul class="footer-menu">
-                    <li>About</li>
-                    <li>News</li>
-                    <li>Q&A</li>
-                </ul>
-            </nav>
-            <p class="copy-right">&copy;HTMLCSS.code</p>
-            <script type="text/javascript">
-                now = new Date();
-                nowyear = now.getFullYear();
-                document.write("Copyright &copy; 2011-" + nowyear);
-            </script>
-        </footer>
-    </div>
+<div class="wrap">
+<header class="header pc">
+<nav class="header-nav">
+<h2>HTML<br>CSS</h2>
+<ul class="header-menu">
+<li class="about"><a href="index.html">About</a></li>
+<li class="news"><a href="news.html">News</a></li>
+<li class="qa"><a href="inquiry.html">Q&A</a></li>
+</ul>
+</nav>
+</header>
+<!-- SP -->
+<header class="header-sp sp">
+<h2>HTML<br>CSS</h2>
+<nav class="header-menu">
+<ul>
+<li class="about"><a href="index.html">About</a></li>
+<li class="news"><a href="news.html">News</a></li>
+<li class="qa"><a href="inquiry.html">Q&A</a></li>
+</ul>
+</nav>
+<!-- ハンバーガーメニュー部分 -->
+<div class="navToggle">
+<span></span><span></span><span></span>
+</div>
+</header>
+<!-- SP-end -->
+<section class="fv pc">
+<p class="fv-img"><img src="./img/news-fv-2.png" alt=""></p>
+<div class="fv-txt">
+<h1>NEWS</h1>
+</div>
+</section>
+<!-- SP -->
+<section class="fv sp">
+<p class="fv-img"><img src="./img/sp-news-fv.png" alt=""></p>
+<h1 class="fv-txt-sp">
+NEWS
+</h1>
+</section>
+<!-- SP-end -->
+<main class="main-contents pc">
+<div class="news-area">
+<p class="news-txt-1">最新情報</p>
+<!-- hoverスライド -->
+<div class="news-img">
+<div class="pc news-img-item">
+<p><img src="./img/kadai-4.png" alt=""></p>
+<p class="hover-slide"><span>アームストロングのカウチ入荷</span></p>
+</div>
+<div class="pc news-img-item">
+<p><img src="./img/kadai-5.png" alt=""></p>
+<p class="hover-slide"><span>アームストロングのチェア再入荷</span></p>
+</div>
+<div class="pc news-img-item">
+<p><img src="./img/kadai-6.png" alt=""></p>
+<p class="hover-slide"><span>アームストロングのテーブル入荷</span></p>
+</div>
+</div>
+<!-- hoverスライド -->
+<p class="news-txt-2">view more</p>
+</div>
+
+</main>
+<!-- SP -->
+<main class="main-contents sp">
+<div class="news-area">
+<p class="news-txt-1 sub-title">最新情報</p>
+<!-- hoverスライド -->
+<div class="news-img">
+<div class="sp news-img-item">
+<p><img src="./img/sp-task2.png" alt=""></p>
+<p class="hover-slide"><span>アームストロングのカウチ入荷</span></p>
+</div>
+<div class="sp news-img-item">
+<p><img src="./img/sp-task3.png" alt=""></p>
+<p class="hover-slide"><span>アームストロングのチェア入荷</span></p>
+</div>
+<div class="sp news-img-item">
+<p><img src="./img/sp-task1.png" alt=""></p>
+<p class="hover-slide"><span>アームストロングのデスク入荷</span></p>
+</div>
+</div>
+<p class="news-txt-2">view more</p>
+<p class="arrow"><img src="./img/arrow-bottom.png" alt=""></p>
+</div>
+
+</main>
+<!-- SP-end -->
+<footer class="footer">
+<nav class="footer-nav">
+<p>HTML<br>CSS</p>
+<ul class="footer-menu">
+<li>About</li>
+<li>News</li>
+<li>Q&A</li>
+</ul>
+</nav>
+<p class="copy-right">&copy;HTMLCSS.code</p>
+<p class="pc">Copyright &copy; 2011-</p>
+</footer>
+</div>
 </body>
 </html>
