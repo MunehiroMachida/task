@@ -1,74 +1,125 @@
 <!DOCTYPE html>
 <html lang="jp">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>??</title>
-    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./css/inquiry.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-        $(function () {
-            $('.navToggle').click(function () {
-                $(this).toggleClass('active');
-                if ($(this).hasClass('active')) {
-                    $('.globalMenuSp').addClass('active');
-                } else {
-                    $('.globalMenuSp').removeClass('active');
-                }
-            });
-        });
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>課題</title>
+<link rel="stylesheet" type="text/css" href="./css/reset.css" />
+<link rel="stylesheet" type="text/css" href="./css/inquiry.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">   </script>
+<script src="./js/sample.js"></script>
 </head>
 <body>
-    <div class="wrap">
-        <header class="header pc">
-            <nav class="header-nav">
-                <h2>HTML<br>CSS</h2>
-                <ul class="header-menu">
-                    <li class="about"><a href="index.html">About</a></li>
-                    <li class="news"><a href="news.html">News</a></li>
-                    <li class="qa"><a href="inquiry.html">Q&A</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- SP -->
-        <header class="header-sp sp">
-            <h2>HTML<br>CSS</h2>
-            <div class="navToggle">
-                <span></span><span></span><span></span>
-            </div>
-            <nav class="globalMenuSp">
-                <ul>
-                    <li class="about"><a href="index.html">About</a></li>
-                    <li class="news"><a href="news.html">News</a></li>
-                    <li class="qa"><a href="inquiry.html">Q&A</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- SP-end -->
-        <section class="fv">
-            <div class="fv-txt">
-                <h1>Q&A</h1>
-            </div>
-        </section>
-        <footer class="footer">
-            <nav class="footer-nav">
-                <p>HTML<br>CSS</p>
-                <ul class="footer-menu">
-                    <li>About</li>
-                    <li>News</li>
-                    <li>Q&A</li>
-                </ul>
-            </nav>
-            <p class="copy-right">&copy;HTMLCSS.code</p>
-            <script type="text/javascript">
-                now = new Date();
-                nowyear = now.getFullYear();
-                document.write("Copyright &copy; 2011-" + nowyear);
-            </script>
-        </footer>
-    </div>
+<div class="wrap">
+<header class="header pc">
+<nav class="header-nav">
+<h2>HTML<br>CSS</h2>
+<ul class="header-menu">
+<li class="about"><a href="index.html">About</a></li>
+<li class="news"><a href="news.html">News</a></li>
+<li class="qa"><a href="inquiry.html">Q&A</a></li>
+</ul>
+</nav>
+</header>
+<!-- SP -->
+<header class="header-sp sp">
+<h2>HTML<br>CSS</h2>
+<nav class="header-menu">
+<ul>
+<li class="about"><a href="index.html">About</a></li>
+<li class="news"><a href="news.html">News</a></li>
+<li class="qa"><a href="inquiry.html">Q&A</a></li>
+</ul>
+</nav>
+<!-- ハンバーガーメニュー部分 -->
+<div class="navToggle">
+<span></span><span></span><span></span>
+</div>
+</header>
+<!-- SP-end -->
+<section class="fv pc">
+<p class="fv-img"><img src="./img/inquiry-fv.png" alt=""></p>
+<div class="fv-txt">
+<h1>Q&A</h1>
+</div>
+</section>
+<!-- SP -->
+<section class="fv sp">
+<p class="fv-img"><img src="./img/inquiry-fv-sp.png" alt=""></p>
+<h1 class="fv-txt-sp">Q%A</h1>
+</section>
+<!-- SP-end -->
+<main class="main-contents pc">
+<div class="style">
+<p class="sub-title">よくある質問</p>
+<div class="faq-list">
+<div class="faq-list-item">
+<div class="faq-list-item-box">
+<h3 class="question">家具の取り置きは可能でしょうか</h3>
+<p><img src="./img/arrow-bottom.png" alt=""></p>
+</div>
+<p class="answer">可能です。 <br>取り置き期間は最大で３週間です。</p>
+</div>
+<div class="faq-list-item">
+<div class="faq-list-item-box">
+<h3 class="question">家具の取り置きは可能でしょうか</h3>
+<p><img src="./img/arrow-bottom.png" alt=""></p>
+</div>
+<p class="answer">可能です。 <br>取り置き期間は最大で３週間です。</p>
+</div>
+<div class="faq-list-item">
+<div class="faq-list-item-box">
+<h3 class="question">家具の取り置きは可能でしょうか</h3>
+<p><img src="./img/arrow-bottom.png" alt=""></p>
+</div>
+<p class="answer">可能です。 <br>取り置き期間は最大で３週間です。</p>
+</div>
+</div>
+</div>
+</main>
+<!-- SP -->
+<main class="main-contents sp">
+<div class="style">
+<p class="sub-title">よくある質問</p>
+<div class="faq-list">
+<div class="faq-list-item">
+<div class="faq-list-item-box">
+<h3 class="question">家具の取り置きは可能でしょうか</h3>
+<p><img src="./img/arrow-bottom.png" alt=""></p>
+</div>
+<p class="answer">可能です。 <br>取り置き期間は最大で３週間です。</p>
+</div>
+<div class="faq-list-item">
+<div class="faq-list-item-box">
+<h3 class="question">家具の取り置きは可能でしょうか</h3>
+<p><img src="./img/arrow-bottom.png" alt=""></p>
+</div>
+<p class="answer">可能です。 <br>取り置き期間は最大で３週間です。</p>
+</div>
+<div class="faq-list-item">
+<div class="faq-list-item-box">
+<h3 class="question">家具の取り置きは可能でしょうか</h3>
+<p><img src="./img/arrow-bottom.png" alt=""></p>
+</div>
+<p class="answer">可能です。 <br>取り置き期間は最大で３週間です。</p>
+</div>
+</div>
+</div>
+</main>
+<!-- SP-end -->
+<footer class="footer">
+<nav class="footer-nav">
+<p>HTML<br>CSS</p>
+<ul class="footer-menu">
+<li>About</li>
+<li>News</li>
+<li>Q&A</li>
+</ul>
+</nav>
+<p class="copy-right">&copy;HTMLCSS.code</p>
+<p class="pc">Copyright &copy; 2011-</p>
+</footer>
+</div>
 </body>
 </html>
