@@ -26,13 +26,18 @@ $(function () {
         });
 });
 // faq-list　img 回転
-$(function () {
-    $('.faq-list-item-box').click(function () {
-        $(this).children('p').toggleClass('action');
-        if ($(this).hasClass('action')) {
-            $(this).find('.faq-list-item-box p').addClass('action');
-        } else {
-            $(this).find('.faq-list-item-box p').removeClass('action');
-        }
-    });
+// $(function () {
+//     $('.faq-list-item-box').click(function () {
+//         $(this).children('p').toggleClass('action');
+//         if ($(this).hasClass('action')) {
+//             $(this).find('.faq-list-item-box p').addClass('action');
+//         } else {
+//             $(this).find('.faq-list-item-box p').removeClass('action');
+//         }
+//     });
+// });
+
+const img = document.getElementsByClassName('faq-list-item-box')[0];
+img.addEventListener('click', function() {
+    img.classList.add('action');
 });
