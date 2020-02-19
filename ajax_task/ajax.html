@@ -1,38 +1,18 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>AjaxAPI</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript">
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ajax</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/ajax.css">
+</head>
+<body>
 
-        function sendPostToApiByAjax()
-        {
-            $.ajax({
-                type:     "POST",
-                url:      "./ajax.json",
-
-                data: {
-                    name : 'ajaxAPI' // リクエストパラメータ
-                },
-                xhrFields: {
-                    withCredentials: true
-                },
-
-            }).done(function(data) {
-
-                console.log('Successful communication with API!');
-
-                console.log('ReturnParameter:' + data['name']);
-
-            }).fail(function(data) {
-                console.log('Ajax fail (communication error)');
-            });
-        }
-
-        </script>
-    </head>
-    <body>
-        <button type="button" name="post" onclick="sendPostToApiByAjax();">非同期POST</button>
-    </body>
+    <script></script>
+    <button id="btn">btn</button>
+    <div id="temp">ロンドンの天気は </div>
+    <script src="./ajax.js"></script>
+</body>
 </html>
