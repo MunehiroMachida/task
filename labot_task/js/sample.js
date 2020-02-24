@@ -22,7 +22,8 @@ navToggle.addEventListener('click', () => {
 //     });
 // });
 
-const news_img = document.getElementsByClassName('news-img-item')
-news_img.addEventListener('mouseover'), () => {
-    news_img.getElementsByClassName("hover-slide").classList.toggle('slideUp');
-}
+const news_img = document.getElementsByClassName('news-img-item');
+
+news_img.addEventListener("mouseover", () => {
+    
+});
