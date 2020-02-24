@@ -12,18 +12,13 @@ navToggle.addEventListener('click', () => {
     }
 });
 
-
-// $('.news-img-item').hover(
-//     function () {
-//         $(this).find('.hover-slide').slideDown();
-//     },
-//     function () {
-//         $(this).find('.hover-slide').slideUp();
-//     });
-// });
-
-const news_img = document.getElementsByClassName('news-img-item');
-
-news_img.addEventListener("mouseover", () => {
-    
+$(function () {
+$('.news-img-item').hover(
+    function () {
+        $(this).find('.hover-slide').slideDown();
+    },
+    function () {
+        $(this).find('.hover-slide').slideUp();
+    });
 });
+
