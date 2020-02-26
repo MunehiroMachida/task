@@ -12,12 +12,12 @@ $(function () {
 });
 
 // faq-listフェードイン
-$(function () {
-    $('.faq-list-item-box').click(function () {
-            $(this).toggleClass('open');
-            $(this).next('.answer').slideToggle();
-        });
-});
+// $(function () {
+//     $('.faq-list-item-box').click(function () {
+//             $(this).toggleClass('open');
+//             $(this).next('.answer').slideToggle();
+//         });
+// });
 // faq-list　img 回転
 $(function () {
     $('.faq-list-item-box').click(function () {
@@ -29,3 +29,10 @@ $(function () {
         }
     });
 });
+
+const faq = document.querySelector(".faq-list-item-box").addEventListener("click",() => {
+    (this).classList.toggle('open');
+    (this).classList.next('.answer').slideToggle();
+});
+
+faq();
