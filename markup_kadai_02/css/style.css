@@ -1,24 +1,12 @@
-body {
-    max-width: 800px;
-    margin: 0 auto;
+.box{
+    height: 256px;
+    width: 256px;
+    margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 24px;
+#red{
+    background-color:#FF0000 ;
 }
-
-h2 {
-    font-size: 20px;
-}
-
-p,ul,ol,dl,address {
-    font-size: 16px;
-}
-
-p,li,dd,dt,address {
-    line-height: 1.5;
-}
-
-.sender-column {
-    text-align: right;
+#blue{
+    background-color:#004EFF ;
 }
