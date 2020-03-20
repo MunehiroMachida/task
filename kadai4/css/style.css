@@ -1,17 +1,5 @@
 .box{
     height: 256px;
-    width: 256px;
-}
-.contents{
-    position: relative;
-}
-
-#red{
+    width: 10%;
     background-color:#FF0000 ;
-}
-#blue{
-    background-color:#004EFF ;
-    position: absolute;
-    top: 0;
-    left: 128px;
 }
