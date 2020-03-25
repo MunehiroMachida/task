@@ -5,6 +5,8 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
+    padding: 25px 0;
+    margin-bottom: 50px;
 }
 
 .header-menu{
@@ -21,4 +23,25 @@ body{
     width: 10px;
     height: 10px;
     background-color: black;
+}
+
+.bread-list{
+    display: flex;
+    list-style: none;
+}
+.bread-list li{
+    color: rgb(141, 141, 141);
+    display: flex;
+    align-items: center;
+}
+
+.NRI-top::after{
+    display: block;
+    content: ">";
+    margin: 0 5px;
+}
+.Company-information::after{
+    display: block;
+    content: ">";
+    margin: 0 5px;
 }
