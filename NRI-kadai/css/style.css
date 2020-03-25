@@ -45,3 +45,32 @@ body{
     content: ">";
     margin: 0 5px;
 }
+
+
+.fv img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.main-contents{
+    width: 70%;
+    position: relative;
+}
+
+.sns-icon{
+    width: 10%;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+.sns-icon p{
+    margin: 0 20px;
+}
+
+.sns-icon img{
+    width: 20px;
+    height: 20px;
+}
