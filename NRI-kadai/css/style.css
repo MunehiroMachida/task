@@ -3,18 +3,28 @@ body{
 }
 
 .header{
+    width: 1680px;
     display: flex;
     justify-content: space-between;
     padding: 25px 0;
-    margin-bottom: 50px;
+    margin:0 auto 50px;
 }
 
 .header-menu{
     display: flex;
 }
+.header-menu li{
+    margin: 0 10px;
+}
 .header-menu a{
+    font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
     color: black;
+}
+.nri-logo img{
+    width: 58px;
+    height: 29.22px;
 }
 .header-icon{
     display: flex;
@@ -47,14 +57,14 @@ body{
 }
 
 
-.fv img{
+.fv-img img{
     height: 250px;
     width: 100%;
     object-fit: cover;
 }
 .main-contents{
-    width: 70%;
-    position: relative;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .sns-icon{
@@ -63,8 +73,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    right: 0;
 }
 .sns-icon p{
     margin: 0 20px;
@@ -73,4 +81,30 @@ body{
 .sns-icon img{
     width: 20px;
     height: 20px;
+}
+
+.main-contents-top{
+    display: block;
+}
+
+.btn button{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+}
+button::before{
+    display: block;
+    content: ">";
+}
+.page-link{
+    display: flex;
+    justify-content: space-between;
+}
+.page-link #page-link-1::before{
+    content: "<";
+}
+
+.page-link #page-link-2::before{
+    content: ">";
 }
