@@ -38,11 +38,16 @@ body{
 .bread-list{
     display: flex;
     list-style: none;
+    width: 70%;
+    margin: 0 auto;
 }
+
+
 .bread-list li{
     color: rgb(141, 141, 141);
     display: flex;
     align-items: center;
+    font-size:12px;
 }
 
 .NRI-top::after{
@@ -55,7 +60,21 @@ body{
     content: ">";
     margin: 0 5px;
 }
-
+.fv{
+    position: relative;
+}
+.fv-txt{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+}
+.fv-txt p{
+    margin-bottom: 15px;
+}
+.fv-txt h1{
+    font-size: 24px;
+}
 
 .fv-img img{
     height: 250px;
@@ -68,10 +87,10 @@ body{
 }
 
 .sns-icon{
-    width: 10%;
+    width: 60%;
     font-size: 13px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 .sns-icon p{
@@ -85,13 +104,23 @@ body{
 
 .main-contents-top{
     display: block;
+
+}
+.box{
+
+}
+.box p{
+    line-height:30px;
+
 }
 
-.btn button{
+.btn{
     display: block;
-    width: 50px;
+    width: 150px;
     height: 50px;
     background-color: aqua;
+    margin-bottom: 100px;
+    margin: 0 auto 100px;
 }
 button::before{
     display: block;
@@ -100,6 +129,8 @@ button::before{
 .page-link{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 300px;
+    background-color: aqua;
 }
 .page-link #page-link-1::before{
     content: "<";
