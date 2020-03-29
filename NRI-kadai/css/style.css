@@ -29,6 +29,9 @@ body{
 .header-icon{
     display: flex;
 }
+.header-icon p{
+    margin:0 5px;
+}
 .nav-hamburger{
     width: 10px;
     height: 10px;
@@ -39,7 +42,7 @@ body{
     display: flex;
     list-style: none;
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 10px;
 }
 
 
@@ -66,7 +69,7 @@ body{
 .fv-txt{
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 15%;
     color: white;
 }
 .fv-txt p{
@@ -87,11 +90,11 @@ body{
 }
 
 .sns-icon{
-    width: 60%;
     font-size: 13px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    margin-bottom: 30px;
+    background-color: violet;
 }
 .sns-icon p{
     margin: 0 20px;
@@ -104,32 +107,48 @@ body{
 
 .main-contents-top{
     display: block;
+    background-color: turquoise;
+    text-align: center;
 
 }
 .box{
-
+    background-color: rgb(44, 134, 59);
+    width: 80%;
+    margin: 0 auto;
+}
+.box h2{
+    margin-bottom: 20px;
+    text-align: left;
 }
 .box p{
     line-height:30px;
-
+    text-align: left;
 }
 
+.box-img{
+margin: 0 auto;
+margin-bottom: 50px;
+}
 .btn{
-    display: block;
-    width: 150px;
+    display: flex;
+    width: 250px;
     height: 50px;
     background-color: aqua;
     margin-bottom: 100px;
     margin: 0 auto 100px;
+    
+}
+.btn button{
+    padding: 15px 20px;
 }
 button::before{
-    display: block;
+
     content: ">";
 }
 .page-link{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
     background-color: aqua;
 }
 .page-link #page-link-1::before{
@@ -138,4 +157,21 @@ button::before{
 
 .page-link #page-link-2::before{
     content: ">";
+}
+
+.main-contents-bottom{
+    background-color: wheat;
+    width: 800px;
+    margin: 0 auto;
+}
+.main-contents-bottom h3{
+    margin: 5px 10px;
+}
+
+
+.main-contents-bottom-box{
+    display: flex;
+}
+.main-contents-bottom-box p{
+    margin: 5px 10px;
 }
