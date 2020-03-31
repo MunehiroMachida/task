@@ -6,8 +6,9 @@ body{
 .header{
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 15px 0;
     margin:0 auto 50px;
     background-color: white;
     position: fixed;
@@ -17,7 +18,9 @@ body{
 
 .header-menu{
     display: flex;
+    justify-content: flex-end;
     margin-left: 300px;
+    width: 89%;
 }
 
 
@@ -44,13 +47,11 @@ body{
 
 .header-icon{
     display: flex;
-    margin-left: 17%;
+    justify-content: space-between;
+    margin:0 1% 0 17%;
+    width: 7%;
 }
 
-
-.header-icon p{
-    margin:0 20px;
-}
 
 
 .nav-hamburger{
@@ -60,7 +61,8 @@ body{
 
 
 .bread-box{
-padding-top: 100px;
+    margin:0 0 20px 50px;
+padding-top: 70px;
 }
 
 
@@ -76,7 +78,7 @@ padding-top: 100px;
     color: rgb(141, 141, 141);
     display: flex;
     align-items: center;
-    font-size:12px;
+    font-size:11px;
 }
 
 
@@ -101,14 +103,15 @@ padding-top: 100px;
 
 .fv-txt{
     position: absolute;
-    top: 30%;
-    left: 15%;
+    top: 18%;
+    left: 25%;
     color: white;
 }
 
 
 .fv-txt p{
-    margin-bottom: 15px;
+    margin-bottom: 24px;
+    font-size: 18px;
 }
 
 
@@ -307,8 +310,8 @@ button::before{
 
 #nav-open span{
     position: absolute;
-    height: 3px;
-    width: 25px;
+    height: 2px;
+    width: 20px;
     background-color: rgb(27, 25, 27);
     display: block;
     
@@ -316,12 +319,12 @@ button::before{
 
 
 .icon-line2{
-    margin-top: 7px;
+    margin-top: 10px;
 }
 
 
 .icon-line3{
-    margin-top: 14px;
+    margin-top: 20px;
 }
 
 
