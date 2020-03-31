@@ -26,11 +26,31 @@
         <div class="header-icon">
             <p><img src="./img/glass.svg" alt=""></p>
             <p><img src="./img/earth.svg" alt=""></p>
-            <p class="nav-hamburger">
+            <!-- <p class="nav-hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </p>
+            </p> -->
+
+            <div id="nav-hamburger">
+                <!-- 多分クリックしたときのアクション チェックボックス。常に非表示にする-->
+                <input id="nav-input" type="checkbox" class="nav-unshown"> 
+                <!-- チェックボックスのラベルここにアイコンを表示 -->
+                <label id="nav-open" for="nav-input">
+                    <span class="icon-line1"></span>
+                    <span class="icon-line2"></span>
+                    <span class="icon-line3"></span>
+                </label>
+                <!-- チェックボックスのラベルその２。初めは非表示。inputがチェック状態になると薄黒のカバーとして表示 -->
+                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                <!-- 表示される中身  -->
+                <div id="nav-content">
+                    <p><img src="" alt=""></p>
+                    <p><img src="" alt=""></p>
+                    <p>メディアの関係者の皆様へ</p>
+                    <p>ビジネスパートナーの皆様へ</p>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -90,7 +110,7 @@
                     <p><a href="">強固な顧客基盤</a></p>
                 </div>
 
-                <div class="main-contents-bottom-box">
+                <div class="main-contents-bottom-box2">
                     <p><a href="">ビジネスモデルの特徴</a></p>
                     
                     <p><a href="">人材が支えるNRI</a></p>
