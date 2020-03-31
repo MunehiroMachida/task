@@ -44,7 +44,6 @@ body{
 
 .header-icon{
     display: flex;
-    background-color: violet;
     margin-left: 17%;
 }
 
@@ -57,7 +56,6 @@ body{
 .nav-hamburger{
     width: 10px;
     height: 10px;
-    background-color: black;
 }
 
 
@@ -137,7 +135,6 @@ padding-top: 100px;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 30px;
-    background-color: violet;
 }
 
 
@@ -154,13 +151,11 @@ padding-top: 100px;
 
 .main-contents-top{
     display: block;
-    background-color: turquoise;
     text-align: center;
 }
 
 
 .box{
-    background-color: rgb(44, 134, 59);
     width: 80%;
     margin: 0 auto;
 }
@@ -190,7 +185,6 @@ margin-bottom: 50px;
     align-items: center;
     width: 250px;
     height: 65px;
-    background-color: aqua;
     margin-bottom: 100px;
     margin: 0 auto 100px;
 }
@@ -220,7 +214,6 @@ button::before{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-    background-color: aqua;
 }
 
 
