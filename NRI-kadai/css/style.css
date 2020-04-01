@@ -98,6 +98,7 @@ padding-top: 70px;
 
 .fv{
     position: relative;
+    margin-bottom: 30px;
 }
 
 
@@ -128,7 +129,7 @@ padding-top: 70px;
 
 
 .main-contents{
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -137,18 +138,18 @@ padding-top: 70px;
     font-size: 13px;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 30px;
+    margin:0 65px 50px 30px;
 }
 
 
 .sns-icon p{
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 
 .sns-icon img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -159,19 +160,24 @@ padding-top: 70px;
 
 
 .box{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
 
 .box h2{
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 30px;
     text-align: left;
+}
+.box h2::before{
+    content: "■";
+    color: blue;
 }
 
 
 .box p{
-    line-height:30px;
+    line-height:2;
     text-align: left;
     margin-bottom: 10px;
 }
@@ -180,6 +186,9 @@ padding-top: 70px;
 .box-img{
 margin: 0 auto;
 margin-bottom: 50px;
+}
+.box-img img{
+    width: 80%;
 }
 
 
