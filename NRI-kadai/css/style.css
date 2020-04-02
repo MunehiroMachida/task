@@ -3,6 +3,7 @@ body{
 }
 
 
+
 .header{
     width: 100%;
     display: flex;
@@ -194,11 +195,11 @@ margin-bottom: 50px;
 
 .btn{
     display: flex;
-    align-items: center;
     width: 250px;
     height: 65px;
     margin-bottom: 100px;
     margin: 0 auto 100px;
+
 }
 
 
@@ -207,6 +208,7 @@ margin-bottom: 50px;
     background-color: #0A5BAC;
     border: none;
     cursor: pointer;
+    position: relative;
 }
 
 
@@ -219,6 +221,10 @@ text-decoration: none;
 button::before{
     content: ">";
     color: azure;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
 }
 
 
@@ -296,6 +302,49 @@ button::before{
     content: ">";
     text-align: left;
 }
+
+
+.Company-info{
+    width: 120%;
+}
+.Company-info h2::before{
+    content: '';
+    display: block;
+    border-top: solid 2px #333;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.Company-info h2::after{
+    content: '';
+    display: block;
+    border-top: dotted 1px #333;
+margin-top: 20px;
+}
+
+.Company-info-list{
+    margin-bottom: 30px;
+}
+.Company-info-list ul{
+    display: flex;
+}
+.Company-info-list li{
+    margin-left: 30px;
+}
+.Company-info-list a{
+    text-decoration: none;
+    color: rgb(65, 97, 184);
+
+}
+.Company-info-list a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
 
 
 /* ハンバーガーメニュー */
