@@ -1,7 +1,6 @@
 body{
-    font-family: ;
+    overflow-x: hidden;
 }
-
 
 
 .header{
@@ -52,7 +51,6 @@ body{
     margin:0 1% 0 17%;
     width: 7%;
 }
-
 
 
 .nav-hamburger{
@@ -171,6 +169,8 @@ padding-top: 70px;
     margin-bottom: 30px;
     text-align: left;
 }
+
+
 .box h2::before{
     content: "■";
     color: blue;
@@ -188,6 +188,8 @@ padding-top: 70px;
 margin: 0 auto;
 margin-bottom: 50px;
 }
+
+
 .box-img img{
     width: 80%;
 }
@@ -199,7 +201,6 @@ margin-bottom: 50px;
     height: 65px;
     margin-bottom: 100px;
     margin: 0 auto 100px;
-
 }
 
 
@@ -304,40 +305,154 @@ button::before{
 }
 
 
-.Company-info{
-    width: 120%;
+.Company-info h2{
+font-size: 20px;
+    
 }
+
+
 .Company-info h2::before{
     content: '';
     display: block;
     border-top: solid 2px #333;
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
+
+
 .Company-info h2::after{
+    content: '';
+    display: block;
+    border-top: dotted 1px #333;
+margin:40px 0;
+}
+
+
+.Company-info-list{
+    margin-bottom: 30px;
+    
+}
+
+
+.Company-info-list h3{
+    margin-bottom: 30px;
+    
+}
+
+
+.Company-info-list::after{
     content: '';
     display: block;
     border-top: dotted 1px #333;
 margin-top: 20px;
 }
 
-.Company-info-list{
-    margin-bottom: 30px;
-}
+
 .Company-info-list ul{
     display: flex;
 }
+
+
 .Company-info-list li{
-    margin-left: 30px;
+margin-bottom: 30px;
+    width: 25%;
 }
+
+
+.Company-info-list li::before{
+    content: ">";
+    font-size: 10px;
+}
+
+
 .Company-info-list a{
     text-decoration: none;
     color: rgb(65, 97, 184);
-
+    font-size: 14px;
 }
+
+
 .Company-info-list a:hover{
     text-decoration: underline;
 }
+
+.Company-info-link{
+    margin:90px 0;
+}
+.Company-info-link a{
+    text-decoration: none;
+    color: #486BAF;
+}
+
+
+.Company-info-link a::before{
+    content: ">";
+    color: #486BAF;
+}
+
+
+.Company-info-link a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.second-Company-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px 0;
+    border-top: solid 2px #333;
+    border-bottom: solid 2px #333;
+    margin:0 -200% 50px;
+}
+.second-Company-info p{
+    margin: 0 10px;
+}
+.second-Company-info img{
+    width: 25px;
+}
+
+
+
+
+
+.flex{
+    display: flex;
+}
+
+.flex ul{
+    width: 25%;
+    margin-bottom: 50px;
+}
+.flex li{
+    margin-bottom: 20px;
+}
+.flex a{
+    color: #333;
+    text-decoration: none;
+}
+.flex a:hover{
+    text-decoration: underline;
+}
+
+
+
+.bold{
+    font-weight: bold;
+}
+
+
+
+.flex a::before{
+    content: ">";
+    color: rgb(41, 41, 41);
+    font-weight: normal;
+}
+
+
+
 
 
 
