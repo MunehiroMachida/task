@@ -1,5 +1,7 @@
 .box{
     height: 256px;
     width: 10%;
-    background-color:#FF0000 ;
+}
+#red{
+    background-color:#FF0000;
 }
