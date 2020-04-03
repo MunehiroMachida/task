@@ -209,13 +209,10 @@ margin-bottom: 50px;
     border: none;
     cursor: pointer;
     position: relative;
-}
-
-
-.btn a{
     color: azure;
-text-decoration: none;
+    text-decoration: none;
 }
+
 
 
 button::before{
