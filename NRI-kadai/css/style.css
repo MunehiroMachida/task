@@ -1,4 +1,5 @@
 body{
+    font-family: "Noto Sans JP", sans-serif;
     overflow-x: hidden;
 }
 
@@ -8,7 +9,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 14px 0;
     margin:0 auto 50px;
     background-color: white;
     position: fixed;
@@ -19,7 +20,7 @@ body{
 .header-menu{
     display: flex;
     justify-content: flex-end;
-    margin-left: 300px;
+    margin-left: 295px;
     width: 89%;
 }
 
@@ -30,18 +31,16 @@ body{
 
 
 .header-menu a{
-    font-size: 14px;
-    letter-spacing: -0.05em;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 600;
     text-decoration: none;
     color: black;
 }
 
 
 .nri-logo img{
-    width: 58px;
-    height: 29.22px;
-    margin-left: 200px;
+    width: 57px;
+    margin-left: 199px;
 }
 
 
@@ -74,7 +73,7 @@ padding-top: 70px;
 
 
 .bread-list li{
-    color: rgb(141, 141, 141);
+    color: #AEAEAE;
     display: flex;
     align-items: center;
     font-size:11px;
@@ -104,19 +103,19 @@ padding-top: 70px;
 .fv-txt{
     position: absolute;
     top: 18%;
-    left: 25%;
+    left: 24%;
     color: white;
 }
 
 
 .fv-txt p{
-    margin-bottom: 24px;
-    font-size: 18px;
+    margin-bottom: 26px;
+    font-size: 20px;
 }
 
 
 .fv-txt h1{
-    font-size: 24px;
+    font-size: 28px;
 }
 
 
@@ -158,39 +157,39 @@ padding-top: 70px;
 }
 
 
-.box{
+.main-box{
     width: 85%;
     margin: 0 auto;
 }
 
 
-.box h2{
+.main-box h2{
     font-size: 24px;
     margin-bottom: 30px;
     text-align: left;
 }
 
 
-.box h2::before{
+.main-box h2::before{
     content: "■";
     color: blue;
 }
 
 
-.box p{
+.main-box p{
     line-height:2;
     text-align: left;
     margin-bottom: 10px;
 }
 
 
-.box-img{
+.main-box-img{
 margin: 0 auto;
 margin-bottom: 50px;
 }
 
 
-.box-img img{
+.main-box-img img{
     width: 80%;
 }
 
@@ -418,22 +417,22 @@ margin-bottom: 30px;
 
 
 
-.flex{
+.link-box{
     display: flex;
 }
 
-.flex ul{
+.link-box ul{
     width: 25%;
     margin-bottom: 50px;
 }
-.flex li{
+.link-box li{
     margin-bottom: 20px;
 }
-.flex a{
+.link-box a{
     color: #333;
     text-decoration: none;
 }
-.flex a:hover{
+.link-box a:hover{
     text-decoration: underline;
 }
 
@@ -445,7 +444,7 @@ margin-bottom: 30px;
 
 
 
-.flex a::before{
+.link-box a::before{
     content: ">";
     color: rgb(41, 41, 41);
     font-weight: normal;
@@ -533,12 +532,12 @@ margin-bottom: 30px;
 
 
 .icon-line2{
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 
 .icon-line3{
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 
@@ -569,6 +568,7 @@ margin-bottom: 30px;
     transition: .3s;
     -webkit-transform: translateX(105%);
     transform: translateX(105%);/*右に隠しておく*/
+    
 }
 
 
