@@ -64,6 +64,40 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.header-logo{
+    padding: 10px 0;
+    width: 160px;
+    height: 37px;
+}
+
+
+.menu-btn{
+    padding: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width:  40px;
+    height: 40px;
+    background: url(../img/hamburger.png) no-repeat center center;
+    background-size: contain;
+}
+
+
+@media screen and (min-width:768px){
+
+    .header-logo{
+        padding: 20px 0;
+        width: 200px;
+        height: 37px;
+    }
+    
+    
+    .menu-btn{
+        display: none;
+    }
+}
+
+
+
 
 nav{
     background-color: #393939;
@@ -111,6 +145,17 @@ main{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 footer{
     background-color: #c84040;
     font-size: 0.9rem;
@@ -120,4 +165,19 @@ footer{
 .footer-container{
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.footer-nav{
+    list-style-type: none;
+}
+.footer-nav li{
+    display: inline;
+    padding: 0 1rem 0 0;
+}
+.footer-nav a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-nav a:hover{
+    opacity: 0.5;
 }
