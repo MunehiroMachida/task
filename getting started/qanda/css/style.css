@@ -147,11 +147,25 @@ main{
 
 
 
+/* ?????? */
+.q-and-a{
+    margin-top: 1em;
+    padding: 8px 0 0 60px;
+}
 
 
+.question{
+    font-weight: bold;
+    color: #6eba44;
+    background: url(/img/q.png) no-repeat;
+    background-size: 40px 40px;
+}
 
-
-
+.answer{
+    margin-bottom: 2em;
+    background: url(/img/a.png) no-repeat;
+    background-size: 40px 40px;
+}
 
 
 
