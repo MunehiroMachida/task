@@ -146,13 +146,101 @@ main{
 }
 
 
+.course-container{
+    display: flex;
+    flex-flow: column;
+}
 
+@media screen and (min-width:768px){
+    .course-container{
+        flex-flow: row;
+    }
+    .course-image{
+        flex:1 1 400px;
+        margin-right: 20px;
+    }
+    .course-text{
+        flex:1 1 580px;
+    }
+}
 
+.course-image img{
+    border-radius: 10px;
+}
+.course-h2{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.course-spec{
+    list-style-type: none;
+}
+.course-label{
+    display: inline-block;
+    padding:0.1rem 0.5rem;
+    margin-right: 0.1rem;
+    border-radius: 3px;
+    background: #c84040;
+    font-size: 0.7rem;
+    color: #fff;
+}
 
+/* コース説明 */
+.course-h3{
+    margin:30px 0 10px 0;
+    color: #c84040;
+    border-bottom: 1px dashed #c84040;
+    font-size: 1.3rem;
+}
 
+.course-description{
+    margin-top:30px;
+    padding: 30px;
+    background:#fff url(/img/point.png) no-repeat;
+    block-size: 50px 50px;
+    border-radius: 10px;
+}
+/* スケジュール */
+.course-schedule{
+    border-collapse: collapse;
+}
+.course-schedule td, .course-schedule th{
+    padding: 0.5em 1em;
+    border-bottom: 1px dotted #aeaeae;
+}
 
+/* 講師プロフィール */
+.course-instriuctor{
+    overflow:hidden;
+}
+.course-instructor img{
+    float:left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 20%;
+}
 
-
+.course-instructor-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0 0.5rem 0;
+}
+/* お申し込みボタン */
+.course-button{
+    display: block;
+    width: 300px;
+    margin: 30px auto;
+    padding: 1rem 0;
+    background-color: #709a00;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.course-button:hover{
+    background-color: #95cd00;
+    color: #fff;
+}
 
 
 
